@@ -13,7 +13,7 @@ async function login() {
       .then(function (user) {
         console.log("logged in user:", user);
         window.add = user.get("ethAddress");
-        document.getElementById("s").innerHTML = "Connected, Your Address: " + add;
+        document.getElementById("btn-login").innerHTML = add.substr(0, 6) + "..." + add.substr(38, 42);
       })
       .catch(function (error) {
         console(error);
