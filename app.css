@@ -1,0 +1,26 @@
+.nav-link{
+    font-size: 20px;
+
+}
+
+.bd{
+    text-align: center!important;
+    display:inline-block!important;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.cb{
+    display: inline;
+}
+
+.cb a{
+    padding: 10px;
+    font-size: large;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 20px;
+}

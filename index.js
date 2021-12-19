@@ -62,6 +62,16 @@ function fixURL(url){
     }
 }
 
+function show(){
+  document.getElementById("body").innerHTML += "<div class='d-block d-lg-none' style='height: 100%; width: 100%; position: absolute; z-index: 10000; background:#000000e0; color:#fff;' id='sv'><center><img src='favicon.ico' style='margin:10%; border-radius:50%;'><ul class='navbar-nav me-auto mb-2 mb-lg-0' class='navbar-nav me-auto mb-2 mb-lg-0'><li class='nav-item active'><a class='nav-link link-light' href='#'>Whitepaper</a></li><li class='nav-item'><a class='nav-link link-light' href='#'>Etherscan</a></li><li class='nav-item'><a class='nav-link link-light' href='#'>Team</a></li><li class='nav-item'><a class='nav-link link-light' href='#'>Roadmap</a></li></ul><ul class='me-auto mb-2 mb-lg-0 bd'><li class='cb'><a class='link-light' href='#'>Twitter</a></li><a style='font-size: 30px;'>|</a><li class='cb'><a class='link-light' href='#'>Telegram</a></li><li class='nav-item'><a class='nav-link link-light' role='button' id='cl'>Close</a></li></ul></center></div>";
+  document.getElementById("cl").onclick = cl;
+}
+
+function cl(){
+  document.getElementById("body").innerHTML = ""
+}
+
 document.getElementById("btn-login").onclick = login;
 document.getElementById("btn-logout").onclick = logOut;
 document.getElementById("v").onclick = getNFTs;
+document.getElementById("sh").onclick = show;
