@@ -30,3 +30,6 @@
     border: none!important;
     padding: 1px!important;
 }
+.navbar-brand {
+    text-align: left!important;
+}
