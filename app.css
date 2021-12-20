@@ -34,3 +34,7 @@
     text-align: left!important;
     font-size: 0.8rem!important;
 }
+.btn-sm {
+padding-top: 0px;
+padding-bottom: 0px;
+}
