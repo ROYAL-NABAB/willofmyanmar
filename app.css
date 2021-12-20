@@ -24,18 +24,3 @@
     line-height: 70px;
     font-size: 20px;
 }
-.navbar-toggler {
-    outline: none!important;
-    box-shadow: none!important;
-    border: none!important;
-    padding: 1px!important;
-}
-.navbar-brand {
-    text-align: left!important;
-    font-size: 0.8rem!important;
-}
-.btn-sm a{
-padding-top: 0px;
-padding-bottom: 0px;
-font-size:5px;
-}
