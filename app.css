@@ -34,7 +34,7 @@
     text-align: left!important;
     font-size: 0.8rem!important;
 }
-.btn-sm {
+.btn-sm a{
 padding-top: 0px;
 padding-bottom: 0px;
 font-size:5px;
