@@ -19,8 +19,75 @@
 
 .cb a{
     padding: 10px;
+    text-align: left;
     font-size: large;
     text-decoration: none;
     line-height: 70px;
     font-size: 20px;
+}
+
+.s{
+    border: 1px groove ;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.v{
+    background-color: tomato!important;
+    border-top-left-radius: 20px!important;
+    border-top-right-radius: 20px!important;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.m{
+    background-color: tomato!important;
+    border-bottom-left-radius: 20px!important;
+    border-bottom-right-radius: 20px!important;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.btn-info{
+    background-color: grey!important;
+    border-color: grey!important;
+    border-radius: 15px!important;
+    margin-top: 1%;
+    font-size: 1.5rem!important;
+    color: #fff!important;
+}
+
+.z1{
+    width: 80px;
+    justify-content: start;
+    padding: 10px;
+    text-align: center;
+}
+.z2{
+    width: 80px;
+    justify-content: end;
+    padding: 10px;
+    text-align: center;
+}
+.z3{
+    width: 80px;
+    justify-content: start;
+    padding: 10px;
+    text-align: center;
+}
+.z4{
+    width: 80px;
+    justify-content: end;
+    padding: 10px;
+    text-align: center;
+}
+.mp{
+    margin-left: 10%;
+    display: inline-block;
+    text-align: center;
+}
+.mp1{
+    margin-right: 10%;
+    float: right;
+    text-align: center;
 }
