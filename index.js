@@ -9,7 +9,7 @@ var add;
 async function login() {
   let user = Moralis.User.current();
   if (!user) {
-    user = await Moralis.authenticate({ signingMessage: "Log in using Moralis" })
+    user = await Moralis.authenticate({ signingMessage: "Log in using Moralis", provider: "walletconnect" })
       .then(function (user) {
         console.log("logged in user:", user);
         window.add = user.get("ethAddress");
@@ -71,7 +71,16 @@ function cl(){
   document.getElementById("body").innerHTML = ""
 }
 
-document.getElementById("btn-login").onclick = login;
+function sh(){
+  document.getElementById("s").innerHTML = "<div class='card-header v'>Connect Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem;'></i></div><div class='gap-4 mp'><img src='mt.png' class='z1' /><p>Metamask</p></div><div class='gap-4 mp1'><img src='tp.svg' class='z2' /><p>TokenPocket</p></div><br><div class='gap-4 mp'><img src='tw.png' class='z3' /><p>Trust Wallet</p></div><div class='gap-4 mp1'><img src='wl.svg' class='z4' id='z4' /><p>Wallet Connect</p></div><div class='card-header m d-grid gap-2'>Haven't got a crypto wallet yet?<br><button type='button' class='btn btn-info'>Create Here</button></div>"
+  document.getElementById("ss").onclick = close;
+  document.getElementById("z4").onclick = login;
+}
+function close(){
+  document.getElementById("s").innerHTML = ""
+}
+
+document.getElementById("btn-login").onclick = sh;
 document.getElementById("btn-logout").onclick = logOut;
 document.getElementById("v").onclick = getNFTs;
 document.getElementById("sh").onclick = show;
