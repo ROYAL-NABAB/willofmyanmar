@@ -1,52 +1,365 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Testing</title>
-    <link rel="icon" href="/favicon.png"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.min.css"/>
-    <link rel="stylesheet" href="app.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="body"></div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-toggler" id="sh">
-          <i class='bi bi-pin dom p-2' style='color: white;'></i>
-        </a>
-        <a class="navbar-brand" href="#">Will of Myanmar</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-          <center>
+
+<head>
+  <title>Homepage</title>
+  <link rel="icon" href="img/logo.png" />
+  <link rel="shortcut icon" href="img/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="app.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class='preloader' id='preloader'>
+    <img src='img/loader.gif' alt='loading....' />
+  </div>
+  <div id="body"></div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <img src='img/Cbg.jpg' alt='main' />
+    <div class="hero-container">
+      <a href="#about" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 mb-0" id='header'>
+    <div class="container-fluid">
+      <a class="navbar-toggler" id="sh">
+        <i class='bi bi-pin p-2' style='color: inherit;'></i>
+      </a>
+      <a class="navbar-brand" style="color: #BBA14F;" href="#">Will of Myanmar</a>
+      <div class="collapse by navbar-collapse" id="navbarSupportedContent2">
+        <center>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Whitepaper</a>
+              <a class="nav-link" href="#Whitepaper">Whitepaper</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Etherscan</a>
+              <a class="nav-link" href="#Etherscan">Etherscan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a class="nav-link" href="#Roadmap">Roadmap</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Roadmap</a>
+              <a class="nav-link" href="#Team">Team</a>
             </li>
           </ul>
-          </center>
-        </div>
-        <div>
-          <a class="btn btn-outline-secondary btn-sm me-1 mb-1" href="www.therichgiraffe.in" role="button">OpenSea</a>
-          <a class="btn btn-outline-secondary btn-sm mb-1" role="button" id="btn-login">Connect Wallet</a>
-        </div>
+        </center>
       </div>
-    </nav>
-    <button id="btn-logout">Logout</button>
+      <div class='db'>
+        <a class="btn btn-outline-secondary btn-sm me-1 mb-1" href="https://opensea.io/collection/will-of-myanmar" role="button">OpenSea</a>
+        <a class="btn btn-outline-secondary btn-sm mb-1" role="button" id="btn-login">Connect Wallet</a>
+      </div>
+    </div>
+  </nav>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
     <div class="s" id="s">
     </div>
-    <button id="v">Nfts</button>
-    <!-- Moralis SDK code -->
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-  </body>
+    <div class='wrap'><video autoplay muted loop id='myVideo'>
+        <source src='img/logo.mp4' type='video/mp4'>
+    </div>
+    <div class='row2'>
+      <div class="col-sm-6">
+        <div class="container" id='Whitepaper'>
+          <div class='card2 float'>
+            <div class="section-title">
+              <h2>Whitepaper</h2>
+            </div>
+            <div class="content card-text">
+              <div class="">
+                <p>
+                  Will Of Myanmar is a one-of-a-kind historical NFT artworks collection created by the project team and
+                  Myanmar artists working together.
+                </p>
+                <a href="#" class="btn-learn-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="container" id='Etherscan'>
+          <div class='card2 float'>
+            <div class="section-title">
+              <h2>Etherscan</h2>
+            </div>
+            <div class="content card-text">
+              <div class="">
+                <p>
+                  We provide a link to our contract address for complete financial transparency of the project. Witness
+                  the Ethereum Universe's Authencity.
+                </p>
+                <a href="#" class="btn-learn-more">Etherscan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='byt2 zyt' id='Roadmap'>
+ <div class="center">     
+<div class="timeline">
+  <ul><span class="default-line"></span><span class="default-line2"></span><span class="draw-line"
+      style="background: rgb(32, 164, 116); height:0;"></span>
+    <li id="draw1" class="in-view">
+      <div></div>
+    </li>
+    <li id="draw2" class="">
+      <div></div>
+    </li>
+    <li id="draw3" class="">
+      <div></div>
+    </li>
+    <li id="draw4">
+      <div></div>
+    </li>
+    <div id="draw5">
+      <div></div>
+    </div>
+  </ul>
+</div>
+</div>
+<h1 class='h2'>Roadmap</h1>
+<div class='right'>
+      <div class="flip-card x1">
+        <div class="flip-card-inner">
+          <div class="flip-card-back">
+            <h1>Phase 1</h1>
+            <h2>Pre Public Phase</h2>
+            <h3>December 2022</h3>
+            <hr>
+            <hr>
+            Team Foundation.<br><br>
+
+            Preparation of educational contents.<br><br>
+
+            Setting up socials.<br><br>
+
+            Recruiting In house artists.<br><br>
+
+            Preparation of artwork submission form.<br><br>
+
+            Contacting influencers and news sources.<br><br>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card x2">
+        <div class="flip-card-inner">
+          <div class="flip-card-back">
+            <h1>Phase 2</h1>
+            <h2>Public Phase</h2>
+            <h3>January 2022</h3>
+            <hr>
+            <hr>
+            Website and Social official launches.<br><br>
+
+            Monitoring of public responses and community building.<br><br>
+
+            Continuous education and contests for better public awareness.<br><br>
+
+
+            Setting up an artist community for the project.<br><br>
+
+            Recruitment of volunteers, OGs and ambassadors.<br><br>
+
+            Artworks Accepting.<br><br>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card x3">
+        <div class="flip-card-inner">
+          <div class="flip-card-back">
+            <h1>Phase 3</h1>
+            <h2>Official Mint</h2>
+            <h3>Feb 1 2022</h3>
+            <hr>
+            <hr>
+            Minting First Series On Opensea.<br><br>
+
+            Funds Allocation.<br><br>
+
+            Donation.<br><br>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card x4">
+        <div class="flip-card-inner">
+          <div class="flip-card-back">
+            <h1>Phase 4</h1>
+            <h2>Development Phase</h2>
+            <hr>
+            <hr>
+            To be continued.<br><br>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class='byt2' id='Team'>
+      <h1 class='h2'>Team</h1>
+      <div class='row2'>
+        <div class="col-sm-6">
+          <div class='nfts2 float'>
+            <div id='nftimg2'>
+              <img width=100 height=100 src='img/Kool.jpg' />
+            </div>
+            <div id='nfttxt2'>Kool</div>
+            <div id='nfttxt2'>Social Media Managment</div>
+            <div id='nftdsc2' markdown=1>Years of Experince in social Media Managment.</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class='nfts2 float'>
+            <div id='nftimg2'>
+              <img width=100 height=100 src='img/best.jpg' />
+            </div>
+            <div id='nfttxt2'>Best</div>
+            <div id='nfttxt2'>Community Managment</div>
+            <div id='nftdsc2' markdown=1>Always in keen Interest and research about Cryptocurrency and NFTs.
+              Ready to give his best for the people and motherland.</div>
+          </div>
+        </div>
+      </div>
+      <div class='row2'>
+        <div class="col-sm-6">
+          <div class='nfts2 float'>
+            <div id='nftimg2'>
+              <img width=100 height=100 src='img/oizhi.jpg' />
+            </div>
+            <div id='nfttxt2'>Oizhi</div>
+            <div id='nfttxt2'>Designer</div>
+            <div id='nftdsc2' markdown=1>Core digital artist of Will of Myanmar.
+              Passionate in creating digital arts and animations and paticipated in many digital art projects where his
+              artworks had been being the cups of tea of many collectors.</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class='nfts2 float'>
+            <div id='nftimg2'>
+              <img width=100 height=100 src='img/gumiho.jpg' />
+            </div>
+            <div id='nfttxt2'>Gumiho</div>
+            <div id='nfttxt2'>Artist</div>
+            <div id='nftdsc2' markdown=1>An emerging artist, contributes to Will of Myanmar project in a variety of
+              ways: creation of arts and social media contents.
+              She is passionate about paintings, and hopes to work as a full-time artist one day.</div>
+          </div>
+        </div>
+      </div>
+      <div class='row2'>
+        <div class="col-sm-6">
+          <div class='nfts2 float'>
+            <div id='nftimg2'>
+              <img width=100 height=100 src='img/udit.jpg' />
+            </div>
+            <div id='nfttxt2'>Udit</div>
+            <div id='nfttxt2'>Lead Developer</div>
+            <div id='nftdsc2' markdown=1>Years of experience in programming since 2014.
+              Deployed smart contracts in many successful nft projects and elsewhere in the crypto-verse.</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class='nfts2 float'>
+            <div id='nftimg2'>
+              <img width=100 height=100 src='img/issac.jpg' />
+            </div>
+            <div id='nfttxt2'>Issac</div>
+            <div id='nfttxt2'>Co-Founder</div>
+            <div id='nftdsc2' markdown=1>Cryptocurrency and blockchain enthusiast.
+              The ultimate goal in life is to launch a successful blockchain-related community-driven project that
+              benefits the community.</div>
+          </div>
+        </div>
+      </div>
+      <div class='nfts2 float'>
+        <div id='nftimg2'>
+          <img width=100 height=100 src='img/feliz.jpg' />
+        </div>
+        <div id='nfttxt2'>Feliz</div>
+        <div id='nfttxt2'>Founder</div>
+        <div id='nftdsc2' markdown=1>A believer in blockchain technology.
+          Passionate in educating the community and changing lives for better.</div>
+      </div>
+    </div>
+    <div class='row2'>
+      <div class="col-sm-6">
+        <div class="container" id=''>
+          <div class='card3 float'>
+            <div class="section-title2">
+              <h2>HandPainting Artwork Nft</h2>
+            </div>
+            <center>
+              <div id='nftimg3'>
+                <img width=350 height=350 src='img/hg.jpg' />
+              </div>
+              <div class="content2">
+                <div class="">
+                  <a href="#" class="btn-learn-more2">Opensea Soon</a>
+                </div>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="container" id=''>
+          <div class='card3 float'>
+            <div class="section-title2">
+              <h2>Digital Artwork Nft</h2>
+            </div>
+            <center>
+              <div id='nftimg3'>
+                <img width=350 height=350 src='img/dg.jpg' />
+              </div>
+              <div class="content2">
+                <div class="">
+                  <a href="https://opensea.io/collection/will-of-myanmar" class="btn-learn-more2">Opensea</a>
+                </div>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+
+      <div class="footer-top">
+  
+        <div class="container">
+  
+          <div class="row  justify-content-center">
+            <div class="col-lg-6">
+              <h3>Will of Myanmar</h3>
+            </div>
+          </div>
+  
+          <div class="social-links">
+            <a href="https://twitter.com/willofmyanmar" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://t.me/will_of_myanmar" class="discord"><i class="bi bi-telegram"></i></a>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Will of Myanmar</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- End Footer -->  
+  </section>
+  <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script
+    src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.6.2/web3-provider.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
