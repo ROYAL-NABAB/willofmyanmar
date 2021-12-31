@@ -11,10 +11,10 @@ if (user) {
 /* Authentication code */
 async function login() {
   if (!user) {
-    user = await Moralis.authenticate({provider:'walletconnect', signingMessage:"Connect Wallet"})
+    user = await Moralis.authenticate({provider:'walletconnect', signingMessage:"Connect Wallet", chainId: 137})
       .then(function (user) {
         console.log("logged in user:", user);
-        var add = user.get("ethAddress");
+        var add = user.get("PolygonAddress");
         document.getElementById("btn-login").innerHTML = add.substr(0, 6) + "..." + add.substr(38, 42);
       })
       .catch(function (error) {
@@ -26,10 +26,10 @@ async function login() {
 
 async function login2() {
   if (!user) {
-    user = await Moralis.authenticate({signingMessage:"Connect Wallet"})
+    user = await Moralis.authenticate({signingMessage:"Connect Wallet", chainId: 137})
       .then(function (user) {
         console.log("logged in user:", user);
-        var add = user.get("ethAddress");
+        var add = user.get("PolygonAddress");
         document.getElementById("btn-login").innerHTML = add.substr(0, 6) + "..." + add.substr(38, 42);
       })
       .catch(function (error) {
