@@ -14,7 +14,7 @@ async function login() {
     user = await Moralis.authenticate({provider:'walletconnect', signingMessage:"Connect Wallet", chainId: 137})
       .then(function (user) {
         console.log("logged in user:", user);
-        var add = user.get("PolygonAddress");
+        var add = user.get("polygonAddress");
         document.getElementById("btn-login").innerHTML = add.substr(0, 6) + "..." + add.substr(38, 42);
       })
       .catch(function (error) {
@@ -29,7 +29,7 @@ async function login2() {
     user = await Moralis.authenticate({signingMessage:"Connect Wallet", chainId: 137})
       .then(function (user) {
         console.log("logged in user:", user);
-        var add = user.get("PolygonAddress");
+        var add = user.get("polygonAddress");
         document.getElementById("btn-login").innerHTML = add.substr(0, 6) + "..." + add.substr(38, 42);
       })
       .catch(function (error) {
