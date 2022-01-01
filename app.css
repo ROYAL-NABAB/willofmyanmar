@@ -357,7 +357,7 @@ align-items:center;
     position: fixed;
     width: 100%;
     height: 100%;
-    object-fit:fill;
+    object-fit:cover;
     z-index: 0;
 }
 #hero .btn-get-started {
@@ -374,6 +374,7 @@ align-items:center;
     border: 2px solid #BBA14F;
     color: #BBA14F;
     text-decoration: none;
+    position: fixed;
   }
   #hero .btn-get-started:hover {
     background: #BBA14F;
