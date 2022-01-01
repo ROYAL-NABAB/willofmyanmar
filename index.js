@@ -6,7 +6,7 @@ Moralis.start({ serverUrl, appId });
 var boom;
 var user = Moralis.User.current();
 if (user) {
-  var add = user.get("PolygonAddress");
+  var add = user.get("polygonAddress");
 }
 /* Authentication code */
 async function login() {
