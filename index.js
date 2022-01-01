@@ -6,7 +6,7 @@ Moralis.start({ serverUrl, appId });
 var boom;
 var user = Moralis.User.current();
 if (user) {
-  var add = user.get("bscAddress");
+  var add = user.get("ethAddress");
 }
 /* Authentication code */
 async function login() {
