@@ -106,9 +106,17 @@ document.getElementById("btn-login").onclick = sh;
 document.getElementById("sh").onclick = show;
 
 let preloader = document.getElementById('preloader');
+$('html, body').css({
+  'overflow': 'hidden',
+  'height': '100%'
+})
 if (preloader) {
   window.addEventListener('load', () => {
     preloader.remove()
+    $('html, body').css({
+  'overflow': 'auto',
+  'height': 'auto'
+})
   });
 }
 
