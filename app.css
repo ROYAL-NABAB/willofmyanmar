@@ -227,7 +227,6 @@ html, body{
     left: 50%;
     top: 50%;
     transform: translate(60%, 5%);
-    border: 2px solid #BBA14F;
     color: #BBA14F;
     overflow-x: scroll;
     background-color: #171717;
@@ -475,7 +474,6 @@ align-items:center;
 .card2{
     width:50%;
     margin:auto;
-    border: 2px solid #BBA14F;
     background-color: #171717;
     border-radius: 16px;
     padding: 10px;
@@ -483,7 +481,6 @@ align-items:center;
 }
 .card3{
     margin:auto;
-    border: 2px solid #BBA14F;
     background-color: #171717;
     border-radius: 16px;
     padding: 10px;
@@ -596,7 +593,6 @@ width: 90%;
     top: 50%;
     height: 100%;
     color: #BBA14F;
-    background-color: #171717;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -609,9 +605,9 @@ width: 90%;
     width: 100%;
     text-align: center;
     transition: transform 0.8s;
-    border: 2px solid #BBA14F;
     transform-style: preserve-3d;
     display: inline-block;
+    background-color: #171717;
   }
 
   /* Position the front and back side */
