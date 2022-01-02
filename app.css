@@ -304,7 +304,7 @@ align-items:center;
     color: #FFD700!important;
 }
 .db a{
-    border-color: #FFD700;
+    border-color: #4b4b4b;
     color: #FFD700;
 }
 .db a:hover{
@@ -379,7 +379,7 @@ align-items:center;
     transition: 0.5s;
     margin-top: 60px;
     margin-left: 350px;
-    border: 2px solid #FFD700;
+    border: 2px solid #4b4b4b;
     color: #FFD700;
     text-decoration: none;
     position: fixed;
@@ -455,7 +455,7 @@ align-items:center;
     color: #FFD700;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 2px solid #FFD700;
+    border: 2px solid #4b4b4b;
     text-decoration: none;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -666,7 +666,7 @@ width: 90%;
     color: #FFD700;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 2px solid #FFD700;
+    border: 2px solid #4b4b4b;
     text-decoration: none;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -693,7 +693,7 @@ width: 90%;
     margin-left: 14px;
     width: 4px;
     background: linear-gradient(
-180deg,#120510,#51454e 5.44%,#544851 40.38%,#554952 85.3%,#1c0f19);
+180deg,#120510,#51454e 5.44%,#120510 40.38%,#554952 85.3%,#1c0f19);
     height: calc(100% - 250px);
 }
 
