@@ -71,7 +71,7 @@ async function vs(){
 vs();
 if (!user) {
 function sh(){
-  document.getElementById("ab").innerHTML = "<div class='s' id='s'><div class='card-header v'>Connect Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem;'></i></div><div class='gap-4 mp'><img src='img/mt.png' class='z1' id='z1' /><p>Metamask</p></div><div class='gap-4 mp1'><img src='img/tp.svg' class='z2' id='z2' /><p>TokenPocket</p></div><br><div class='gap-4 mp'><img src='img/tw.png' class='z3' id='z3' /><p>Trust Wallet</p></div><div class='gap-4 mp1'><img src='img/wl.svg' class='z4' id='z4' /><p>Wallet Connect</p></div><div class='card-header m d-grid gap-2' style='color:#fff;'>Haven't got a crypto wallet yet?<br><button type='button' class='btn vd btn-info'>Create Here</button></div></div>"
+  document.getElementById("ab").innerHTML = "<div class='s' id='s'><div class='card-header v'>Connect Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem;'></i></div><div class='gap-4 mp'><img src='img/mt.png' class='z1' id='z1' /><p>Metamask</p></div><div class='gap-4 mp1'><img src='img/tp.svg' class='z2' id='z2' /><p>TokenPocket</p></div><br><div class='gap-4 mp'><img src='img/tw.png' class='z3' id='z3' /><p>Trust Wallet</p></div><div class='gap-4 mp1'><img src='img/wl.svg' class='z4' id='z4' /><p>Wallet Connect</p></div><div class='card-header m d-grid gap-2' style='color:#fff;'>Haven't got a crypto wallet yet?<br><a href='https://metamask.io/' type='button' class='btn vd btn-info'>Create Here</a></div></div>"
   document.getElementById("ss").onclick = close;
   document.getElementById("z4").onclick = login;
   document.getElementById("z3").onclick = login2;
@@ -89,7 +89,7 @@ function sh(){
   vs();
   balm = boom
   console.log(balm);
-  document.getElementById("ab").innerHTML = "<div class='s' id='s'><div class='card-header v'>Your Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem; font-weight:900;'></i></div><div class='card-body'>ETH Balance: "+ balm +"</div><div class='card-bodyv' style='text-align: left;'>Your Address </div><div class='card-body0' id='vv2'><input class='vv' id='vv' readonly value='"+ add +"'</input><i class='bi dom bi-clipboard' id='jj'></i></div><div class='ic'><a href='collection.html'>Collection</a></div><div class='card-header m d-grid gap-2'><button type='button' class='btn vd btn-info' id='btn-logout'>Disconnect Wallet</button></div></div>"
+  document.getElementById("ab").innerHTML = "<div class='s' id='s'><div class='card-header v'>Your Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem; font-weight:900;'></i></div><div class='card-body'>Matic Balance: "+ balm +"</div><div class='card-bodyv' style='text-align: left;'>Your Address </div><div class='card-body0' id='vv2'><input class='vv' id='vv' readonly value='"+ add +"'</input><i class='bi dom bi-clipboard' id='jj'></i></div><div class='ic'><a href='collection.html'>Collection</a></div><div class='card-header m d-grid gap-2'><button type='button' class='btn vd btn-info' id='btn-logout'>Disconnect Wallet</button></div></div>"
   document.getElementById("btn-logout").onclick = logOut;
   document.getElementById("ss").onclick = close;
 
@@ -227,9 +227,9 @@ $(window).on("load",function() {
       , d = $(".timeline #draw5").offset().top;
     console.log("timelinelogger", l, d),
     l > d ? r.css({
-        background: "#BBA14F"
+        background: "#FFD700"
     }) : r.css({
-        background: "#BBA14F"
+        background: "#FFD700"
     }),
 
       t.each(function(e) {
