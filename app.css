@@ -315,15 +315,15 @@ align-items:center;
     color: #BBA14F;
 }
 #sh:hover{
-    background-color: rgb(186, 161, 79);
-    color: #fff;
+    background-color: transparent;
+    color: #BBA14F;
     cursor:pointer;
 }
 #hero {
     width: 100%;
     height: 100vh;
     background: black top center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     margin-bottom: -70px;
     background-repeat: no-repeat;
@@ -358,8 +358,15 @@ align-items:center;
     position: fixed;
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit:contain;
     z-index: 0;
+}
+#hero #bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  z-index: 0;
 }
 #hero .btn-get-started {
     font-family: "Raleway", sans-serif;
@@ -370,8 +377,8 @@ align-items:center;
     padding: 10px 40px;
     border-radius: 4px;
     transition: 0.5s;
-    margin-top: 90px;
-    margin-left: 250px;
+    margin-top: 60px;
+    margin-left: 350px;
     border: 2px solid #BBA14F;
     color: #BBA14F;
     text-decoration: none;
@@ -554,7 +561,9 @@ width: 90%;
 }
 #hero .btn-get-started {
   margin-top: 60px;
-  margin-left: 120px;
+  margin-left: 280px;
+  font-size: 16px;
+  padding: 10px 20px;
 }
 .navbar-toggler{
   padding: 0px!important;

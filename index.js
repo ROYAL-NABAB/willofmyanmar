@@ -100,7 +100,7 @@ function sh(){
   document.getElementById("jj").onclick = jj;
 }
 function close(){
-  document.getElementById("s").innerHTML = ""
+  document.getElementById("ab").innerHTML = ""
 }
 }
 
