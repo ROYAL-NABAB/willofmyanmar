@@ -563,6 +563,9 @@ width: 90%;
 .navbar>.container-fluid{
   justify-content: center!important;
 }
+.s{
+  width: 90%;
+}
 }
 
 .zyt{
