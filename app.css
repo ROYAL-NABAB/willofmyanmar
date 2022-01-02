@@ -230,6 +230,7 @@ html, body{
     border: 2px solid #BBA14F;
     color: #BBA14F;
     overflow-x: scroll;
+    background-color: #171717;
 }
 #nftimg2{
     padding: 5%;
@@ -475,7 +476,7 @@ align-items:center;
     width:50%;
     margin:auto;
     border: 2px solid #BBA14F;
-    background-color: #282828;
+    background-color: #171717;
     border-radius: 16px;
     padding: 10px;
     margin-bottom: 5%;
@@ -483,6 +484,7 @@ align-items:center;
 .card3{
     margin:auto;
     border: 2px solid #BBA14F;
+    background-color: #171717;
     border-radius: 16px;
     padding: 10px;
     margin-bottom: 5%;
@@ -594,6 +596,7 @@ width: 90%;
     top: 50%;
     height: 100%;
     color: #BBA14F;
+    background-color: #171717;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   

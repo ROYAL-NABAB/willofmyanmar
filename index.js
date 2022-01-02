@@ -62,8 +62,10 @@ function cl(){
   document.getElementById("body").innerHTML = ""
 }
 async function vs(){
-    balo = await Moralis.Web3API.account.getNativeBalance();
-    boom = balo.balance;
+  const opt = {chain: "matic"}
+    balo = await Moralis.Web3API.account.getNativeBalance(opt);
+    boom2 = balo.balance;
+    boom = Moralis.Units.FromWei(boom2)
     return boom
 }
 vs();
