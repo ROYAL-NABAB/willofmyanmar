@@ -560,8 +560,8 @@ width: 90%;
   transform: translate(2%, 5%);
 }
 #hero .btn-get-started {
-  margin-top: 60px;
-  margin-left: 280px;
+  margin-top: 350px;
+  margin-left: 0px;
   font-size: 16px;
   padding: 10px 20px;
 }
