@@ -46,7 +46,7 @@ if (user) {
 async function logOut() {
   await Moralis.User.logOut();
   console.log("logged out");
-  document.getElementById("s").innerHTML="Disconnected";
+  document.getElementById("s").innerHTML="<center>Disconnected</center>";
   var add;
   location.reload(false);
 }
@@ -111,7 +111,7 @@ function ft(){
   document.getElementById("sec2").onclick = gt;
 }
 function gt(){
-  document.getElementById("ft").innerHTML = "<div class='section-title2'><h2>HandPainting Artwork Nft</h2></div><center><div id='nftimg3'><img src='img/hg.jpg' /></div></center><div class='content2'><div class=''><a href='#' class='btn-learn-more2'>Opensea Soon</a><a style='cursor: pointer;' class='btn-learn-more2 float-end' id='sec'>Info</a></div></div>"
+  document.getElementById("ft").innerHTML = "<div class='section-title2'><h2>HandPainting Artwork Nft</h2></div><center><div id='nftimg3'><img src='img/hg.jpg' /></div></center><div class='content2'><div class=''><a href='#' class='btn-learn-more2'>Opensea Soon</a><a style='cursor: pointer;' class='btn-learn-more2 float-end2' id='sec'>Info</a></div></div>"
   document.getElementById("sec").onclick = ft;
 }
 

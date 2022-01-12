@@ -575,6 +575,13 @@ width: 90%;
 .s{
   width: 90%;
 }
+.float-end2{
+  float: none!important;
+}
+}
+
+.float-end2{
+  float: right;
 }
 
 .zyt{
