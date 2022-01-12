@@ -106,8 +106,18 @@ function close(){
 }
 }
 
+function ft(){
+  document.getElementById("ft").innerHTML = "<div class='section-title2'><h2>Through the Struggle</h2></div><center><div id='nftimg3'><p>Description: As of January 4, 2022, according to AAPP, 1,435 people have been killed, 11,337 people have been imprisoned, and 1964 people have evaded the warrant in Myanmar since the coup happened on February 1, 2021. Despite the challenges, struggles, blood, and sweat, people in Myanmar continue to fight against the military in order to get the justice, freedom and the democracy. <br><br><br>Note: The artist will send the original painting (size: 30cmx40cm, medium: acrylic on canvas) to the first owner who has minted the NFT.</p></div><div class='content2'><div class=''><a style='cursor: pointer;' class='btn-learn-more2' id='sec2'>Close</a></div></center></div>"
+  document.getElementById("sec2").onclick = gt;
+}
+function gt(){
+  document.getElementById("ft").innerHTML = "<div class='section-title2'><h2>HandPainting Artwork Nft</h2></div><center><div id='nftimg3'><img src='img/hg.jpg' /></div></center><div class='content2'><div class=''><a href='#' class='btn-learn-more2'>Opensea Soon</a><a style='cursor: pointer;' class='btn-learn-more2 float-end' id='sec'>Info</a></div></div>"
+  document.getElementById("sec").onclick = ft;
+}
+
 document.getElementById("btn-login").onclick = sh;
 document.getElementById("sh").onclick = show;
+document.getElementById("sec").onclick = ft;
 
 let preloader = document.getElementById('preloader');
 $('html, body').css({
