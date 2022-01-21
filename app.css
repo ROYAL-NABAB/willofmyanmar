@@ -188,6 +188,7 @@ html, body{
     transform: translate(60%, 5%);
     overflow-x: scroll;
     border:2px solid #FFD700;
+    box-shadow: 20px 10px 25px rgb(255 255 255 / 20%);
 }
 #nftimg{
     margin-top:-15%;
@@ -230,6 +231,7 @@ html, body{
     color: #FFD700;
     overflow-x: scroll;
     background-color: #171717;
+    box-shadow: 20px 10px 25px rgb(255 255 255 / 20%);
 }
 #nftimg2{
     padding: 5%;
@@ -409,7 +411,6 @@ object-fit: contain;
 
 .container{
     margin-top: 5%;
-    background-color: black;
     position: relative;
     color:#FFD700;
 }
@@ -484,6 +485,7 @@ object-fit: contain;
     border-radius: 16px;
     padding: 10px;
     margin-bottom: 5%;
+    box-shadow: 20px 10px 25px rgb(255 255 255 / 20%);
 }
 .card3{
     margin:auto;
@@ -491,6 +493,7 @@ object-fit: contain;
     border-radius: 16px;
     padding: 50px;
     margin-bottom: 5%;
+    box-shadow: 20px 10px 25px rgb(255 255 255 / 20%);
 }
 .row2{
     --bs-gutter-x: 1.5rem;
@@ -625,6 +628,7 @@ width: 90%;
     transform-style: preserve-3d;
     display: inline-block;
     background-color: #171717;
+    box-shadow: 20px 10px 25px rgb(255 255 255 / 20%);
   }
 
   /* Position the front and back side */
