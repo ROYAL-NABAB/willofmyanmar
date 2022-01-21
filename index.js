@@ -124,19 +124,7 @@ document.getElementById("sec").onclick = ft;
 }
 
 let preloader = document.getElementById('preloader');
-$('html, body').css({
-  'overflow': 'hidden',
-  'height': '100%'
-})
-if (preloader) {
-  window.addEventListener('load', () => {
-    preloader.remove()
-    $('html, body').css({
-  'overflow': 'auto',
-  'height': 'auto'
-})
-  });
-}
+
 
 const onscroll = (el, listener) => {
   el.addEventListener('scroll', listener)
