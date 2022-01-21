@@ -117,7 +117,11 @@ function gt(){
 
 document.getElementById("btn-login").onclick = sh;
 document.getElementById("sh").onclick = show;
+if(document.getElementById("sec") == null){
+
+}else{
 document.getElementById("sec").onclick = ft;
+}
 
 let preloader = document.getElementById('preloader');
 $('html, body').css({

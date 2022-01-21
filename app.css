@@ -505,6 +505,10 @@ align-items:center;
         width: 60%;
         transform: translate(30%, 5%);
     }
+    .nfts {
+      width: auto;
+      transform: translate(2%, 5%);
+  }
 }
 .flex{
     opacity: 1;
