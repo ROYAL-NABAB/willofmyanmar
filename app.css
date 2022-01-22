@@ -707,6 +707,19 @@ width: 90%;
     background: #20a474;
 }
 
+.draw-line::after {
+  content: '';
+  width: 4px;
+  height: 10px;
+  background-color: rgba(215, 215, 0, 0.1);
+  box-shadow: 0px 0px 10px 4px rgba(215, 215, 0, 1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .timeline .default-line {
     content: "";
     position: absolute;
