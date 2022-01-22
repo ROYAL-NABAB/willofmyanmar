@@ -62,7 +62,7 @@ function cl(){
   document.getElementById("body").innerHTML = ""
 }
 async function vs(){
-  const opt = {chain: "matic"}
+  const opt = {chain: "matic", address: add}
     balo = await Moralis.Web3API.account.getNativeBalance(opt);
     boom2 = balo.balance;
     boom = Moralis.Units.FromWei(boom2)
@@ -87,9 +87,8 @@ function sh(){
     return new Promise(resolve => setTimeout(resolve, time));
   }
   vs();
-  balm = boom
-  console.log(balm);
-  document.getElementById("ab").innerHTML = "<div class='s' id='s'><div class='card-header v'>Your Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem; font-weight:900;'></i></div><div class='card-body'>Matic Balance: "+ balm +"</div><div class='card-bodyv' style='text-align: left;'>Your Address </div><div class='card-body0' id='vv2'><input class='vv' id='vv' readonly value='"+ add +"'</input><i class='bi dom bi-clipboard' id='jj'></i></div><div class='ic'><a href='collection.html'>Collection</a></div><div class='card-header m d-grid gap-2'><button type='button' class='btn vd btn-info' id='btn-logout'>Disconnect Wallet</button></div></div>"
+  console.log(boom);
+  document.getElementById("ab").innerHTML = "<div class='s' id='s'><div class='card-header v'>Your Wallet<i class='bi bi-x' id='ss' style='color: black; float: right; font-size: 1.5rem; font-weight:900;'></i></div><div class='card-body'>Matic Balance: "+ boom +"</div><div class='card-bodyv' style='text-align: left;'>Your Address </div><div class='card-body0' id='vv2'><input class='vv' id='vv' readonly value='"+ add +"'</input><i class='bi dom bi-clipboard' id='jj'></i></div><div class='ic'><a href='collection.html'>Collection</a></div><div class='card-header m d-grid gap-2'><button type='button' class='btn vd btn-info' id='btn-logout'>Disconnect Wallet</button></div></div>"
   document.getElementById("btn-logout").onclick = logOut;
   document.getElementById("ss").onclick = close;
 
