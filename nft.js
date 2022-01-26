@@ -1,5 +1,5 @@
 async function getNFTs() {
-    const opt = { chain: 'matic', address:  add};
+    const opt = { chain: 'polygon', address:  '0xe58821dd8d6f067f534ead77d8fa6fdea58f00ea'};
     const nfts = await Moralis.Web3.getNFTs(opt);
     console.log(nfts);
   if(nfts.length == 0){
@@ -7,11 +7,12 @@ async function getNFTs() {
   }
   else{
     for (var i=0, n=nfts.length; i < n; ++i ){
+      console.log(nfts[i].token_uri)
         let url = fixURL(nfts[i].token_uri);
         const params = { theurl: url };
         const met = await Moralis.Cloud.run("fetchJSON", params);
         console.log(met);
-if(met.status == 404 || met.status == 400) {
+if(met.status == 404 || met.status == 400 || met.status == 429) {
     console.log('shit')
     }
     else{
@@ -23,8 +24,11 @@ if(met.status == 404 || met.status == 400) {
             }
           }
           if(met.data.description == null || met.data.description == "undefined"){""}
+          if(met.data.hasOwnProperty("image")){
           document.getElementById("byt").innerHTML += "<div class='nfts' id='nft'><div id='nftimg'><img width=100 height=100 src='"+ fixURL(met.data.image) +"'/></div><div id='nfttxt'>"+ met.data.name +"</div><div id='nftdsc'>"+ jv(); +"</div></div>";
-          console.log(met.data.name);
+          }else{
+            document.getElementById("byt").innerHTML += "<div class='nfts' id='nft'><div id='nftimg'><img width=100 height=100 src='"+ fixURL(met.data.image_url) +"'/></div><div id='nfttxt'>"+ met.data.name +"</div><div id='nftdsc'>"+ jv(); +"</div></div>";
+          }
       }
     }
   }
