@@ -1,5 +1,5 @@
 async function getNFTs() {
-    const opt = { chain: 'polygon', address:  '0xe58821dd8d6f067f534ead77d8fa6fdea58f00ea'};
+    const opt = { chain: 'polygon', address:  add};
     const nfts = await Moralis.Web3.getNFTs(opt);
     console.log(nfts);
   if(nfts.length == 0){
