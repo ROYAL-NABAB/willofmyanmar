@@ -1,9 +1,10 @@
+if (user) {
 async function getNFTs() {
     const opt = { chain: 'polygon', address:  add};
     const nfts = await Moralis.Web3.getNFTs(opt);
     console.log(nfts);
   if(nfts.length == 0){
-    document.getElementById("byt").innerHTML += "<center><h2>You Don't Have Nft</h2></center>";
+    document.getElementById("bytz").innerHTML += "<center><h2>You Don't Have Nft</h2></center>";
   }
   else{
     for (var i=0, n=nfts.length; i < n; ++i ){
@@ -25,9 +26,9 @@ if(met.status == 404 || met.status == 400 || met.status == 429) {
           }
           if(met.data.description == null || met.data.description == "undefined"){""}
           if(met.data.hasOwnProperty("image")){
-          document.getElementById("byt").innerHTML += "<div class='nfts' id='nft'><div id='nftimg'><img width=100 height=100 src='"+ fixURL(met.data.image) +"'/></div><div id='nfttxt'>"+ met.data.name +"</div><div id='nftdsc'>"+ jv(); +"</div></div>";
+          document.getElementById("bytz").innerHTML += "<div class='nfts' id='nft'><div id='nftimg'><img width=100 height=100 src='"+ fixURL(met.data.image) +"'/></div><div id='nfttxt'>"+ met.data.name +"</div><div id='nftdsc'>"+ jv(); +"</div></div>";
           }else{
-            document.getElementById("byt").innerHTML += "<div class='nfts' id='nft'><div id='nftimg'><img width=100 height=100 src='"+ fixURL(met.data.image_url) +"'/></div><div id='nfttxt'>"+ met.data.name +"</div><div id='nftdsc'>"+ jv(); +"</div></div>";
+            document.getElementById("bytz").innerHTML += "<div class='nfts' id='nft'><div id='nftimg'><img width=100 height=100 src='"+ fixURL(met.data.image_url) +"'/></div><div id='nfttxt'>"+ met.data.name +"</div><div id='nftdsc'>"+ jv(); +"</div></div>";
           }
       }
     }
@@ -47,3 +48,6 @@ function fixURL(url){
 }
 
 getNFTs();
+}else{
+  document.getElementById("bytz").innerHTML += "<center><h2>Connect Your Wallet First</h2></center>";
+}

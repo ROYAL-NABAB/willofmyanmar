@@ -175,6 +175,10 @@ html, body{
     padding: 1px 1px 3px;
     align-items: center;
 }
+#bytz{
+  padding: 10px;
+  text-align: center;
+}
 .nfts{
     align-items: center;
     margin:5%;
