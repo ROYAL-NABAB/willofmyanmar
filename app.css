@@ -519,6 +519,7 @@ align-items:center;
     .nfts {
       width: auto;
       transform: translate(2%, 5%);
+      padding: 10%;
   }
 }
 .flex{

@@ -46,7 +46,7 @@ if (user) {
 async function logOut() {
   await Moralis.User.logOut();
   console.log("logged out");
-  document.getElementById("s").innerHTML="<center>Disconnected</center>";
+  document.getElementById("s").innerHTML="<center style='padding: 10px;'>Disconnected</center>";
   var add;
   location.reload(false);
 }
