@@ -275,6 +275,7 @@ html, body{
     text-transform: uppercase;
     text-align: center;
     padding: 1%;
+    font-weight: 900!important;
 }
 .preloader{
 z-index: 9999;
@@ -594,6 +595,12 @@ width: 90%;
 .float-end2{
   float: none!important;
 }
+.cntnt{
+  flex-direction: column!important;
+}
+.p-nft{
+  width: auto!important;
+}
 }
 
 .float-end2{
@@ -907,3 +914,65 @@ width: 90%;
       padding-top: 5px;
     }
   }
+
+
+.partners{
+  color: #FFD700;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  padding: 2% 5% 5% 5%;
+}
+
+.p-head{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.cntnt{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  width: 100%;
+}
+
+.p-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.p-title{
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.p-des{
+  font-size: 1rem;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.p-nft{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: #171717;
+  border-radius: 16px;
+  padding: 50px;
+  margin-bottom: 5%;
+  box-shadow: 20px 10px 25px rgb(255 255 255 / 20%);
+  width: 40%;
+  margin-top: 7%;
+}
